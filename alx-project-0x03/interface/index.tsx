@@ -1,9 +1,16 @@
-// Interface definitions for the project
-
-export interface PageRouteProps {
-  pageRoute: string;
-}
+import { ReactNode } from "react";
 
 export interface LayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
+}
+
+export interface PageRouteProps {
+  pageRoute: string
+}
+
+export interface ButtonProps {
+  buttonLabel: string
+  buttonSize?: string
+  buttonBackgroundColor?: 'red' | 'blue' | 'orange' | 'green'
+  action?: () => void
 }
